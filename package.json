@@ -2,6 +2,9 @@
   "name": "uwalafiya",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -50,8 +53,5 @@
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.3",
     "tailwindcss": "^3.4.1"
-  },
-"engines": {
-  "node": "18.x"
-}
+  }
 }
