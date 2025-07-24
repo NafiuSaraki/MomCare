@@ -12,7 +12,7 @@ export default function Home() {
           MomCare
         </h1>
         <p className="mt-6 text-lg md:text-xl text-green-700 max-w-md mx-auto md:mx-0">
-          Caring for mother and baby’s health made easy! Information in Hausa to support pregnant women.
+          Caring for mother and baby’s health made easy! Information to support pregnant women.
         </p>
         <div className="mt-8 flex justify-center md:justify-start gap-4">
           <button
