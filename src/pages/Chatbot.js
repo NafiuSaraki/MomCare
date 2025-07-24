@@ -43,7 +43,7 @@ const Chatbot = () => {
       setForm({ input: "" });
       setIsSuccess(true);
     } catch (err) {
-      setMessage(err.response?.data?.message || "An samu kuskure");
+      setMessage(err.response?.data?.message || "An error occurred");
       setIsSuccess(false);
     } finally {
       setIsLoading(false); // Stop loading
@@ -61,7 +61,7 @@ const Chatbot = () => {
       {/* Header */}
       <header className="sticky top-0 z-50 w-full bg-white shadow-md py-4 px-6 flex justify-center items-center">
         <h1 className="text-2xl md:text-3xl font-semibold text-green-700">
-          UwaLafiya Chatbot
+          MomCare Chatbot
         </h1>
       </header>
 
@@ -101,7 +101,7 @@ const Chatbot = () => {
             type="text"
             value={form.input}
             onChange={handleChange}
-            placeholder="Rubuta tambayarka..."
+            placeholder="Type your question..."
             disabled={isLoading}
             className="flex-1 px-4 py-3 border rounded-xl outline-none shadow-sm focus:ring-2 focus:ring-green-400 transition disabled:opacity-50"
           />
@@ -112,7 +112,7 @@ const Chatbot = () => {
               isLoading ? "opacity-50 cursor-not-allowed" : "hover:bg-blue-700"
             }`}
           >
-            {isLoading ? "Ana Aiki..." : "Aika"}
+            {isLoading ? "Working..." : "Send"}
           </button>
         </form>
 
@@ -124,9 +124,9 @@ const Chatbot = () => {
       {/* Bottom Navigation - Hidden on md and above */}
       <nav className="fixed bottom-0 w-full bg-white shadow-md border-t py-2 flex justify-around z-50 md:hidden">
         <NavButton icon={<FaHome size={20} />} label="Dashboard" onClick={() => navigate("/dashboard")} />
-        <NavButton icon={<FaLightbulb size={20} />} label="Shawara" onClick={() => navigate("/tips")} />
+        <NavButton icon={<FaLightbulb size={20} />} label="Advice" onClick={() => navigate("/tips")} />
         <NavButton icon={<FaRobot size={20} />} label="Chatbot" onClick={() => navigate("/chatbot")} />
-        <NavButton icon={<FaUser size={20} />} label="Bayanan Ki" onClick={() => navigate("/profile")} />
+        <NavButton icon={<FaUser size={20} />} label="Your Info" onClick={() => navigate("/profile")} />
       </nav>
     </div>
   );
