@@ -11,34 +11,34 @@ const Profile = () => {
       <div className="max-w-md mx-auto bg-white rounded-xl shadow-md p-6">
         <div className="flex flex-col items-center mb-6">
           <FaUserCircle size={80} className="text-green-600 mb-2" />
-          <h2 className="text-xl font-bold text-green-800">{user.name || "Sunan Ki"}</h2>
-          <p className="text-sm text-gray-600">{user.email || "Imel ɗinki"}</p>
+          <h2 className="text-xl font-bold text-green-800">{user.name || "Your Name"}</h2>
+          <p className="text-sm text-gray-600">{user.email || "Your Email"}</p>
         </div>
 
         <div className="space-y-4 text-gray-800">
           <div className="flex justify-between items-center border-b pb-2">
-            <span className="font-medium">Sunan Cikakke:</span>
-            <span>{user.name || "Ba a saka ba"}</span>
+            <span className="font-medium">Full Name:</span>
+            <span>{user.name || "Not provided"}</span>
           </div>
           <div className="flex justify-between items-center border-b pb-2">
-            <span className="font-medium">Imel:</span>
-            <span>{user.email || "Ba a saka ba"}</span>
+            <span className="font-medium">Email:</span>
+            <span>{user.email || "Not provided"}</span>
           </div>
           <div className="flex justify-between items-center border-b pb-2">
-            <span className="font-medium">Mako na ciki:</span>
-            <span>{user.pregnancyWeek || "Ba a saka ba"}</span>
+            <span className="font-medium">Pregnancy Week:</span>
+            <span>{user.pregnancyWeek || "Not provided"}</span>
           </div>
         </div>
 
         <div className="mt-6 flex justify-center">
           <button className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700">
             <FaEdit />
-            <span>Gyara Bayani</span>
+            <span>Edit Info</span>
           </button>
         </div>
       </div>
 
-      {/* Footer Nav */}
+      {/* Footer Navigation */}
       <div className="fixed bottom-0 left-0 w-full bg-white py-2 flex justify-around border-t shadow-lg z-10">
         <button
           onClick={() => navigate("/dashboard")}
@@ -52,7 +52,7 @@ const Profile = () => {
           className="flex flex-col items-center text-green-700 text-sm"
         >
           <FaLightbulb size={20} />
-          <span className="text-xs mt-1">Shawara</span>
+          <span className="text-xs mt-1">Tips</span>
         </button>
         <button
           onClick={() => navigate("/chatbot")}
@@ -66,7 +66,7 @@ const Profile = () => {
           className="flex flex-col items-center text-green-700 text-sm"
         >
           <FaUser size={20} />
-          <span className="text-xs mt-1">Bayanan Ki</span>
+          <span className="text-xs mt-1">Profile</span>
         </button>
       </div>
     </div>

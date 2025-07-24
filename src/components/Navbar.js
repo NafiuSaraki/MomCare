@@ -52,7 +52,7 @@ export default function Navbar() {
           onClick={handleHomeClick}
           className="text-2xl font-bold tracking-wide"
         >
-          UwaLafiya
+       MumCare
         </a>
 
         {/* Hamburger Button (Mobile) */}

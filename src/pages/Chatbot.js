@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+  import React, { useState, useRef, useEffect } from 'react';
 import Fuse from 'fuse.js';
 import knowledgeBase from '../data/knowledgeBase.json';
 import { FaHome, FaLightbulb, FaRobot, FaUser } from "react-icons/fa";
@@ -28,7 +28,7 @@ const Chatbot = () => {
     if (!input.trim()) return;
 
     const results = fuse.search(input.toLowerCase());
-    let answer = "Yi hakuri, ban fahimci tambayar ba. Da fatan za ka sake gwadawa.";
+    let answer = "Sorry, I didn’t understand the question. Please try again.";
 
     if (results.length > 0 && results[0].score < 0.6) {
       answer = results[0].item.answer;
@@ -81,7 +81,7 @@ const Chatbot = () => {
           <input
             type="text"
             className="flex-1 border border-gray-300 p-3 rounded-l-lg outline-none"
-            placeholder="Rubuta tambayarka..."
+            placeholder="Type your question..."
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={handleKeyPress}
@@ -90,7 +90,7 @@ const Chatbot = () => {
             className="bg-blue-600 text-white px-6 rounded-r-lg hover:bg-blue-700 transition"
             onClick={handleSend}
           >
-            Aika
+            Send
           </button>
         </div>
 
@@ -110,7 +110,7 @@ const Chatbot = () => {
           className="flex flex-col items-center text-green-700 text-sm"
         >
           <FaLightbulb size={20} />
-          <span className="text-xs mt-1">Shawara</span>
+          <span className="text-xs mt-1">Tips</span>
         </button>
         <button
           onClick={() => navigate("/chatbot")}
@@ -124,7 +124,7 @@ const Chatbot = () => {
           className="flex flex-col items-center text-green-700 text-sm"
         >
           <FaUser size={20} />
-          <span className="text-xs mt-1">Bayanan Ki</span>
+          <span className="text-xs mt-1">Profile</span>
         </button>
       </nav>
 

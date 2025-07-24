@@ -23,7 +23,7 @@ const Register = () => {
       setIsSuccess(true);
       setTimeout(() => navigate("/login"), 2000);
     } catch (err) {
-      setMessage(err.response?.data?.message || "An samu kuskure");
+      setMessage(err.response?.data?.message || "An error occurred");
       setIsSuccess(false);
     }
   };
@@ -39,7 +39,7 @@ const Register = () => {
         </h2>
         <input
           name="name"
-          placeholder="Suna"
+          placeholder="Name"
           className="w-full p-3 mb-4 border rounded-xl"
           onChange={handleChange}
           value={form.name}
@@ -48,7 +48,7 @@ const Register = () => {
         <input
           name="email"
           type="email"
-          placeholder="Imel"
+          placeholder="Email"
           className="w-full p-3 mb-4 border rounded-xl"
           onChange={handleChange}
           value={form.email}
@@ -57,7 +57,7 @@ const Register = () => {
         <input
           name="password"
           type="password"
-          placeholder="Kalmar sirri"
+          placeholder="Password"
           className="w-full p-3 mb-4 border rounded-xl"
           onChange={handleChange}
           value={form.password}
@@ -66,7 +66,7 @@ const Register = () => {
         <input
           name="pregnancyWeek"
           type="number"
-          placeholder="Shigar da makon ciki"
+          placeholder="Enter Pregnancy Week"
           className="w-full p-3 mb-4 border rounded-xl"
           onChange={handleChange}
           value={form.pregnancyWeek}

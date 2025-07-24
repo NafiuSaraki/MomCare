@@ -1,4 +1,3 @@
-// pages/Tips.js
 import React from "react";
 import pregnancyTips from "../data/tips.json";
 import {
@@ -18,7 +17,7 @@ const Tips = () => {
   return (
     <div className="min-h-screen bg-green-50 p-6 font-sans pt-24 pb-24">
       <h1 className="text-3xl font-extrabold text-green-800 mb-6 text-center">
-        Shawarwarin Lafiya na Mako na {currentWeek || "?"}
+        Weekly Health Tip for Week {currentWeek || "?"}
       </h1>
 
       {weeklyTip ? (
@@ -29,7 +28,7 @@ const Tips = () => {
           <p className="mb-6 text-gray-800 whitespace-pre-wrap">{weeklyTip.tip}</p>
 
           <h3 className="text-xl font-semibold mb-2 text-green-700">
-            Shawarwarin WHO/NHS:
+            WHO/NHS Recommendations:
           </h3>
           <ul className="list-disc list-inside text-gray-700">
             {weeklyTip.who_tips.map((tip, idx) => (
@@ -41,39 +40,39 @@ const Tips = () => {
         </div>
       ) : (
         <p className="text-center text-red-600 text-lg font-semibold">
-          Babu shawara don wannan makon.
+          No tip available for this week.
         </p>
       )}
 
-      {/* Bottom Nav */}
+      {/* Bottom Navigation */}
       <div className="fixed bottom-0 left-0 w-full bg-white py-2 flex justify-around border-t shadow-lg z-10">
         <button
           onClick={() => navigate("/dashboard")}
           className="flex flex-col items-center text-green-700 text-sm"
         >
           <FaHome size={20} />
-          <span className="text-xs mt-1">Dashboard</span>
+          <span className="text-xs mt-1">Home</span>
         </button>
         <button
           onClick={() => navigate("/tips")}
           className="flex flex-col items-center text-green-700 text-sm"
         >
           <FaLightbulb size={20} />
-          <span className="text-xs mt-1">Shawara</span>
+          <span className="text-xs mt-1">Tips</span>
         </button>
         <button
           onClick={() => navigate("/chatbot")}
           className="flex flex-col items-center text-green-700 text-sm"
         >
           <FaRobot size={20} />
-          <span className="text-xs mt-1">Chatbot</span>
+          <span className="text-xs mt-1">Ask</span>
         </button>
         <button
           onClick={() => navigate("/profile")}
           className="flex flex-col items-center text-green-700 text-sm"
         >
           <FaUser size={20} />
-          <span className="text-xs mt-1">Bayanan Ki</span>
+          <span className="text-xs mt-1">Your Info</span>
         </button>
       </div>
     </div>

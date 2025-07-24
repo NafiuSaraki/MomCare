@@ -8,7 +8,7 @@ const Login = () => {
   const [isSuccess, setIsSuccess] = useState(null);
   const navigate = useNavigate();
 
-  // Idan user yana da token, kai shi dashboard kai tsaye
+  // If the user already has a token, redirect to dashboard immediately
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (token) {
@@ -16,27 +16,29 @@ const Login = () => {
     }
   }, [navigate]);
 
+  // Handle input changes
   const handleChange = (e) =>
     setForm({ ...form, [e.target.name]: e.target.value });
 
+  // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       const res = await axios.post("/login", form);
 
-      // Nasara
-      setMessage("An shiga cikin nasara");
+      // Success
+      setMessage("Login successful");
       setIsSuccess(true);
 
-      // Adana token da user info a localStorage
+      // Store token and user info in localStorage
       localStorage.setItem("token", res.data.token);
       localStorage.setItem("user", JSON.stringify(res.data.user));
 
-      // Jira ɗan lokaci ka kai user dashboard
+      // Wait a bit and redirect user to dashboard
       setTimeout(() => navigate("/dashboard"), 1500);
     } catch (err) {
-      // Kuskure daga server ko network
-      setMessage(err.response?.data?.message || "An samu kuskure wajen login");
+      // Server or network error
+      setMessage(err.response?.data?.message || "An error occurred during login");
       setIsSuccess(false);
     }
   };
@@ -48,12 +50,12 @@ const Login = () => {
         className="bg-white p-8 rounded-xl shadow-md w-full max-w-md"
       >
         <h2 className="text-2xl font-bold mb-6 text-green-700 text-center">
-          Shiga (Login)
+          Login
         </h2>
         <input
           name="email"
           type="email"
-          placeholder="Imel"
+          placeholder="Email"
           className="w-full p-3 mb-4 border rounded-xl focus:outline-none focus:ring-2 focus:ring-green-300"
           onChange={handleChange}
           value={form.email}
@@ -62,7 +64,7 @@ const Login = () => {
         <input
           name="password"
           type="password"
-          placeholder="Kalmar sirri"
+          placeholder="Password"
           className="w-full p-3 mb-4 border rounded-xl focus:outline-none focus:ring-2 focus:ring-green-300"
           onChange={handleChange}
           value={form.password}

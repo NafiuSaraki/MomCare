@@ -24,8 +24,8 @@ const Dashboard = () => {
     <div className="min-h-screen bg-green-50 p-4 pb-24 pt-10 font-sans">
       {/* Header */}
       <div className="bg-green-700 text-white p-5 rounded-2xl shadow-md">
-        <h1 className="text-2xl font-extrabold">Barka da zuwa, {user?.name}!</h1>
-        <p className="text-sm mt-1">Ga bayani game da lafiyar ki da jaririnki.</p>
+        <h1 className="text-2xl font-extrabold">Welcome, {user?.name}!</h1>
+        <p className="text-sm mt-1">Here's information about your and your baby's health.</p>
       </div>
 
       {/* Info Cards */}
@@ -34,32 +34,32 @@ const Dashboard = () => {
           <FaBaby size={40} className="text-green-800" />
           {currentWeek ? (
             <>
-              <p className="font-bold mt-2">Mako na {currentWeek}</p>
-              <span className="text-sm text-gray-700">Cigaban Jariri</span>
+              <p className="font-bold mt-2">Week {currentWeek}</p>
+              <span className="text-sm text-gray-700">Baby Development</span>
             </>
           ) : (
             <>
-              <p className="font-bold mt-2 text-red-700">Babu bayanin mako</p>
-              <span className="text-sm text-gray-700">Sabunta bayananki</span>
+              <p className="font-bold mt-2 text-red-700">No week info</p>
+              <span className="text-sm text-gray-700">Update your info</span>
             </>
           )}
         </div>
 
-        {/* An yi wannan card ɗin clickable domin kaiwa chatbot */}
+        {/* This card is clickable and navigates to the chatbot */}
         <button
           onClick={() => navigate("/chatbot")}
           className="bg-green-600 text-white p-4 rounded-xl flex flex-col items-center shadow-sm"
           type="button"
         >
           <FaComments size={40} />
-          <p className="font-bold mt-2">Lafiya Chatbot</p>
+          <p className="font-bold mt-2">Health Chatbot</p>
         </button>
       </div>
 
       {/* WHO Tip Section */}
       <div className="bg-white p-4 rounded-xl shadow-inner border border-green-200">
         <h3 className="text-lg font-bold text-center mb-3 text-green-800">
-          Shawarar WHO – Mako na {currentWeek || "?"}
+          WHO Tip – Week {currentWeek || "?"}
         </h3>
 
         <div className="flex justify-around text-green-700 text-3xl mb-3">
@@ -79,12 +79,12 @@ const Dashboard = () => {
           </div>
         ) : (
           <p className="text-center text-sm text-red-600 mt-2 font-semibold">
-            Babu shawara don wannan makon.
+            No tip available for this week.
           </p>
         )}
       </div>
 
-      {/* Bottom Nav */}
+      {/* Bottom Navigation */}
       <div className="fixed bottom-0 left-0 w-full bg-white py-2 flex justify-around border-t shadow-lg z-10">
         <button
           onClick={() => navigate("/dashboard")}
@@ -98,7 +98,7 @@ const Dashboard = () => {
           className="flex flex-col items-center text-green-700 text-sm"
         >
           <FaLightbulb size={20} />
-          <span className="text-xs mt-1">Shawara</span>
+          <span className="text-xs mt-1">Advice</span>
         </button>
         <button
           onClick={() => navigate("/chatbot")}
@@ -112,7 +112,7 @@ const Dashboard = () => {
           className="flex flex-col items-center text-green-700 text-sm"
         >
           <FaUser size={20} />
-          <span className="text-xs mt-1">Bayanan Ki</span>
+          <span className="text-xs mt-1">Your Info</span>
         </button>
       </div>
     </div>

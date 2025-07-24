@@ -1,362 +1,362 @@
 [
   {
     "week": 1,
-    "title": "Fara juna biyu lafiya",
-    "tip": "A tabbata kina samun isasshen hutu da abinci mai kyau don lafiyar ki da jariri.",
+    "title": "Start Pregnancy Safely",
+    "tip": "Make sure you get enough rest and eat well for your health and the baby's.",
     "who_tips": [
-      "Ci abinci mai gina jiki kamar 'ya'yan itatuwa da kayan lambu.",
-      "Guji shan taba da shan giya."
+      "Eat nutritious foods like fruits and vegetables.",
+      "Avoid smoking and drinking alcohol."
     ]
   },
   {
     "week": 2,
-    "title": "Ci gaba da lura da lafiyar ki",
-    "tip": "Kula da shan ruwa sosai da gujewa damuwa.",
+    "title": "Continue Monitoring Your Health",
+    "tip": "Stay hydrated and avoid stress.",
     "who_tips": [
-      "Sha ruwa akalla kofi 8 a rana.",
-      "Yi motsa jiki mai sauki kamar tafiya."
+      "Drink at least 8 cups of water daily.",
+      "Engage in light physical activity like walking."
     ]
   },
   {
     "week": 3,
-    "title": "Tabbatar da ganewar juna biyu",
-    "tip": "Ka je wurin likita don tabbatar da juna biyu da samun shawarwari na farko.",
+    "title": "Confirm Pregnancy",
+    "tip": "Visit a doctor to confirm your pregnancy and get early advice.",
     "who_tips": [
-      "Yi gwajin ciki domin tabbatarwa.",
-      "Fara shan folic acid don taimakawa ci gaban jariri."
+      "Take a pregnancy test for confirmation.",
+      "Start taking folic acid to support baby development."
     ]
   },
   {
     "week": 4,
-    "title": "Kula da lafiyar mahaifa",
-    "tip": "Guji yin abubuwan da zasu iya cutar da jariri kamar shan magunguna ba tare da izini ba.",
+    "title": "Take Care of Uterine Health",
+    "tip": "Avoid anything that might harm the baby like taking unapproved medication.",
     "who_tips": [
-      "Guji shan magunguna marasa izini.",
-      "Ka je wurin likita idan kana jin zafi ko wani abu daban."
+      "Avoid taking medicines without doctor approval.",
+      "See a doctor if you experience pain or anything unusual."
     ]
   },
   {
     "week": 5,
-    "title": "Fara motsa jiki mai sauki",
-    "tip": "Yi motsa jiki kamar tafiya mai natsuwa domin kara lafiyar jiki.",
+    "title": "Start Light Exercise",
+    "tip": "Do gentle exercises like calm walking to improve health.",
     "who_tips": [
-      "Guji yin motsa jiki mai nauyi sosai.",
-      "Ka tabbata kana shan ruwa sosai."
+      "Avoid intense or heavy workouts.",
+      "Ensure you drink plenty of water."
     ]
   },
   {
     "week": 6,
-    "title": "Rike lafiyar zuciya da jini",
-    "tip": "Ka ci abinci mai dauke da iron domin kauce wa rashin jini.",
+    "title": "Support Heart and Blood Health",
+    "tip": "Eat iron-rich foods to prevent anemia.",
     "who_tips": [
-      "Ci abinci mai dauke da iron kamar naman kaji, wake, da koren ganye.",
-      "Yi gwajin jini don ganin matakin iron."
+      "Eat iron-rich foods like chicken, beans, and leafy greens.",
+      "Do a blood test to check iron levels."
     ]
   },
   {
     "week": 7,
-    "title": "Guji damuwa",
-    "tip": "Ka guji damuwa da yanayi marasa kyau domin lafiyar jariri.",
+    "title": "Avoid Stress",
+    "tip": "Avoid stressful situations to protect your baby’s health.",
     "who_tips": [
-      "Yi nazarin hanyoyin shakatawa kamar yin addu'a ko sauraron waka.",
-      "Ka kwanta da wuri don samun isashen hutu."
+      "Practice relaxation like prayer or listening to music.",
+      "Sleep early to get enough rest."
     ]
   },
   {
     "week": 8,
-    "title": "Kula da lafiyar hanci da baki",
-    "tip": "Yi wanka da kyau da kuma kula da lafiyar baki domin kauce wa cututtuka.",
+    "title": "Take Care of Nose and Oral Health",
+    "tip": "Maintain hygiene and oral care to avoid infections.",
     "who_tips": [
-      "Kwasfa haƙori sau biyu a rana.",
-      "Guji amfani da abubuwan da zasu cutar da baki."
+      "Brush teeth twice a day.",
+      "Avoid substances that harm oral health."
     ]
   },
   {
     "week": 9,
-    "title": "Kara yawan cin abinci mai gina jiki",
-    "tip": "Ka ci abinci mai dauke da bitamin da ma’adanai da suka dace.",
+    "title": "Increase Nutritious Food Intake",
+    "tip": "Eat foods rich in vitamins and minerals.",
     "who_tips": [
-      "Ci abinci mai dauke da Vitamin C kamar lemu da ayaba.",
-      "Ka tabbata kina shan ruwa da yawa."
+      "Consume Vitamin C sources like oranges and bananas.",
+      "Drink enough water daily."
     ]
   },
   {
     "week": 10,
-    "title": "Kula da nauyin jiki",
-    "tip": "Kula da nauyin jikinki don kauce wa matsalolin lafiya.",
+    "title": "Monitor Body Weight",
+    "tip": "Maintain healthy weight to avoid complications.",
     "who_tips": [
-      "Kiyaye nauyin jiki a hankali.",
-      "Yi motsa jiki mai sauki kamar tafiya."
+      "Control weight gradually.",
+      "Engage in light physical activity like walking."
     ]
   },
   {
     "week": 11,
-    "title": "Kiyaye tsaftar jiki",
-    "tip": "Ka kula da tsaftar jiki don rage yiwuwar kamuwa da cututtuka.",
+    "title": "Maintain Body Hygiene",
+    "tip": "Keep your body clean to reduce the risk of infections.",
     "who_tips": [
-      "Wanke hannu kafin cin abinci.",
-      "Yi wanka akai-akai."
+      "Wash hands before eating.",
+      "Bathe regularly."
     ]
   },
   {
     "week": 12,
-    "title": "Kula da zafin jiki",
-    "tip": "Ka guji zama a yanayi mai zafi ko sanyi sosai.",
+    "title": "Regulate Body Temperature",
+    "tip": "Avoid extreme heat or cold environments.",
     "who_tips": [
-      "Ka sha ruwa sosai domin kiyaye danshi a jiki.",
-      "Guji fita a rana sosai."
+      "Drink plenty of water to stay hydrated.",
+      "Avoid going out in strong sunlight."
     ]
   },
   {
     "week": 13,
-    "title": "Ci gaba da shan folic acid",
-    "tip": "Folic acid yana taimakawa wajen rage hadarin matsalolin haihuwa.",
+    "title": "Continue Folic Acid Intake",
+    "tip": "Folic acid helps reduce the risk of birth defects.",
     "who_tips": [
-      "Ci abinci mai dauke da folate kamar kabeji da wake.",
-      "Ka cigaba da shan folic acid har zuwa mako na 12."
+      "Eat folate-rich foods like cabbage and beans.",
+      "Continue folic acid supplements through week 12."
     ]
   },
   {
     "week": 14,
-    "title": "Kula da lafiyar jiki gaba daya",
-    "tip": "Ka tabbatar kana samun isashen barci da hutu.",
+    "title": "Overall Body Care",
+    "tip": "Ensure enough sleep and rest for general wellbeing.",
     "who_tips": [
-      "Yi barci akalla sa'o'i 7-8 a dare.",
-      "Guji damuwa da gajiya sosai."
+      "Sleep at least 7–8 hours per night.",
+      "Avoid excessive stress and fatigue."
     ]
   },
   {
     "week": 15,
-    "title": "Kula da hawan jini",
-    "tip": "Ka duba hawan jini akai-akai don kauce wa matsaloli.",
+    "title": "Monitor Blood Pressure",
+    "tip": "Check blood pressure regularly to prevent issues.",
     "who_tips": [
-      "Ka guji cin abinci mai yawa gishiri.",
-      "Yi motsa jiki mai sauki."
+      "Avoid salty foods.",
+      "Engage in gentle exercise."
     ]
   },
   {
     "week": 16,
-    "title": "Kulawa da jin dadi",
-    "tip": "Ka yi abubuwan da zasu kara maka jin dadi da kwanciyar hankali.",
+    "title": "Care for Mental Well-being",
+    "tip": "Do things that help you feel calm and happy.",
     "who_tips": [
-      "Yi shakatawa ta hanyar karatu ko kallo fina-finai masu dadi.",
-      "Ka guji abubuwan da zasu sa ka cikin damuwa."
+      "Relax with books or movies you enjoy.",
+      "Avoid stress triggers."
     ]
   },
   {
     "week": 17,
-    "title": "Lura da ci gaban jariri",
-    "tip": "Ka je wurin likita domin duba ci gaban jariri.",
+    "title": "Monitor Baby’s Development",
+    "tip": "Visit the doctor to check on baby’s progress.",
     "who_tips": [
-      "Yi amfani da ultrasound idan likita ya ba da shawara.",
-      "Ka tambayi likita duk lokacin da ka damu."
+      "Use ultrasound if recommended.",
+      "Ask your doctor any concerns you have."
     ]
   },
   {
     "week": 18,
-    "title": "Kula da abinci mai kyau",
-    "tip": "Ka ci abinci mai wadataccen sinadaran gina jiki.",
+    "title": "Eat Quality Food",
+    "tip": "Eat foods rich in essential nutrients.",
     "who_tips": [
-      "Ka ci kayan lambu masu launin kore da ja.",
-      "Ka sha madara ko madarar kayan lambu."
+      "Eat colorful vegetables like green and red ones.",
+      "Drink milk or plant-based alternatives."
     ]
   },
   {
     "week": 19,
-    "title": "Guji shan taba",
-    "tip": "Shan taba na iya haifar da matsaloli ga jariri.",
+    "title": "Avoid Smoking",
+    "tip": "Smoking can cause serious problems for the baby.",
     "who_tips": [
-      "Guji shan taba koda a cikin gida.",
-      "Ka nemi taimako idan kana son daina shan taba."
+      "Don’t smoke, even indoors.",
+      "Seek help to quit if needed."
     ]
   },
   {
     "week": 20,
-    "title": "Kulawa da fata",
-    "tip": "Ka kula da fata domin rage kumburi da bushewa.",
+    "title": "Take Care of Your Skin",
+    "tip": "Moisturize to prevent dryness and swelling.",
     "who_tips": [
-      "Yi amfani da man shafawa mai laushi.",
-      "Guji wanka da ruwan zafi sosai."
+      "Use gentle moisturizing creams.",
+      "Avoid very hot baths."
     ]
   },
   {
     "week": 21,
-    "title": "Kulawa da lafiya ta zuciya",
-    "tip": "Ka rage damuwa domin lafiyar zuciya da jini.",
+    "title": "Care for Heart Health",
+    "tip": "Reduce stress for better heart and blood pressure.",
     "who_tips": [
-      "Yi tunani mai kyau da addu'a.",
-      "Ka guji abubuwan da zasu sa ka damuwa."
+      "Think positively and pray.",
+      "Avoid things that stress you out."
     ]
   },
   {
     "week": 22,
-    "title": "Ci gaba da motsa jiki",
-    "tip": "Yi motsa jiki domin taimakawa jiki da lafiyar jariri.",
+    "title": "Continue Physical Activity",
+    "tip": "Exercise helps your body and baby’s health.",
     "who_tips": [
-      "Yi tafiya mai natsuwa akalla minti 30 a rana.",
-      "Ka guji motsa jiki mai nauyi sosai."
+      "Walk calmly for at least 30 minutes daily.",
+      "Avoid intense workouts."
     ]
   },
   {
     "week": 23,
-    "title": "Lura da nauyin jiki",
-    "tip": "Kula da nauyin jikinki daidai domin kauce wa matsalolin kiba.",
+    "title": "Watch Your Weight",
+    "tip": "Keep weight balanced to prevent excessive gain.",
     "who_tips": [
-      "Ka ci abinci mai kyau ba tare da yawa ba.",
-      "Ka yi motsa jiki akai-akai."
+      "Eat healthy food without overeating.",
+      "Exercise regularly."
     ]
   },
   {
     "week": 24,
-    "title": "Kula da lafiyar hakora",
-    "tip": "Yi brush na hakora da kyau don kauce wa cututtukan baki.",
+    "title": "Take Care of Dental Health",
+    "tip": "Brush properly to prevent oral issues.",
     "who_tips": [
-      "Yi brush sau biyu a rana.",
-      "Ka ziyarci likitan hakora lokaci-lokaci."
+      "Brush twice daily.",
+      "Visit the dentist periodically."
     ]
   },
   {
     "week": 25,
-    "title": "Ka guji shan kwayoyi marasa izini",
-    "tip": "Kar ka sha kowane magani ba tare da shawarar likita ba.",
+    "title": "Avoid Unauthorized Medication",
+    "tip": "Do not take any drugs without medical advice.",
     "who_tips": [
-      "Ka nemi shawarar likita kafin shan magani.",
-      "Ka guji amfani da magungunan gargajiya marasa tabbaci."
+      "Consult a doctor before taking medicine.",
+      "Avoid uncertified herbal remedies."
     ]
   },
   {
     "week": 26,
-    "title": "Kulawa da numfashi",
-    "tip": "Ka guji zama a wuraren da ake da hayaki ko datti.",
+    "title": "Take Care of Breathing",
+    "tip": "Avoid polluted or smoky environments.",
     "who_tips": [
-      "Ka guji shakar hayaki ko datti mai yawa.",
-      "Ka tabbatar iska tana shiga gida sosai."
+      "Avoid inhaling too much smoke or dust.",
+      "Ensure fresh air circulation in the house."
     ]
   },
   {
     "week": 27,
-    "title": "Shan ruwa mai tsafta",
-    "tip": "Sha ruwa mai tsafta akai-akai don lafiyar ki da jariri.",
+    "title": "Drink Clean Water",
+    "tip": "Drink clean water regularly for your health and baby’s.",
     "who_tips": [
-      "Ka sha ruwa mai tsabta ko wanda aka tace.",
-      "Ka guji shan ruwa daga wuraren da ba a tabbatar ba."
+      "Drink purified or filtered water.",
+      "Avoid unknown water sources."
     ]
   },
   {
     "week": 28,
-    "title": "Ci gaba da shan folic acid",
-    "tip": "Folic acid na taimakawa wajen kariya daga matsalolin haifuwa.",
+    "title": "Continue Folic Acid",
+    "tip": "Folic acid helps protect against birth issues.",
     "who_tips": [
-      "Ka ci gaba da shan folic acid har zuwa karshe.",
-      "Ka ci abinci mai dauke da folate."
+      "Keep taking folic acid till the end.",
+      "Eat folate-rich foods."
     ]
   },
   {
     "week": 29,
-    "title": "Kulawa da tsarin narkar da abinci",
-    "tip": "Guji cin abinci mai sa kumburi ko tashin zuciya.",
+    "title": "Support Digestion",
+    "tip": "Avoid foods that cause bloating or nausea.",
     "who_tips": [
-      "Ci abinci a hankali da sauki.",
-      "Guji kayan abinci masu yaji sosai."
+      "Eat slowly and in small portions.",
+      "Avoid spicy foods."
     ]
   },
   {
     "week": 30,
-    "title": "Ka rika yin gwaje-gwaje",
-    "tip": "Yi gwaje-gwajen likita da aka tsara don duba lafiyar jariri da ki.",
+    "title": "Do Medical Checkups",
+    "tip": "Go for scheduled tests to monitor you and the baby’s health.",
     "who_tips": [
-      "Ka bi jadawalin gwaje-gwaje na likita.",
-      "Ka tambayi likita idan akwai matsala."
+      "Follow the doctor’s test schedule.",
+      "Ask questions if you have concerns."
     ]
   },
   {
     "week": 31,
-    "title": "Ka kula da garkuwar jiki",
-    "tip": "Ka ci abinci mai karfafa garkuwar jiki kamar citrus fruits.",
+    "title": "Support Immune System",
+    "tip": "Eat immune-boosting foods like citrus fruits.",
     "who_tips": [
-      "Ka ci kayan itatuwa masu Vitamin C.",
-      "Ka huta sosai don karfafa jiki."
+      "Eat Vitamin C-rich fruits.",
+      "Rest well to strengthen immunity."
     ]
   },
   {
     "week": 32,
-    "title": "Lura da alamomin matsala",
-    "tip": "Ka lura da alamomin kamar zafi ko jini domin neman taimakon likita.",
+    "title": "Watch for Warning Signs",
+    "tip": "Be alert to symptoms like bleeding or pain and seek help.",
     "who_tips": [
-      "Ka gaggauta zuwa asibiti idan akwai jini ko zafi mai tsanani.",
-      "Ka sanar da likita duk wani abu daban."
+      "Go to the hospital if there’s bleeding or severe pain.",
+      "Inform your doctor of any unusual signs."
     ]
   },
   {
     "week": 33,
-    "title": "Kula da lafiyar jijiyoyi",
-    "tip": "Yi hutun da ya dace don rage kumburin kafafu.",
+    "title": "Care for Vein Health",
+    "tip": "Take breaks to reduce leg swelling.",
     "who_tips": [
-      "Ka rika dagawa kafafu sama lokaci-lokaci.",
-      "Ka guji tsayawa ko zama a wuri guda na dogon lokaci."
+      "Raise your legs from time to time.",
+      "Avoid sitting or standing in one spot too long."
     ]
   },
   {
     "week": 34,
-    "title": "Ka guji shan caffeine mai yawa",
-    "tip": "Rage shan caffeine kamar kofi ko shayi mai karfi.",
+    "title": "Limit Caffeine",
+    "tip": "Reduce intake of caffeine like strong tea or coffee.",
     "who_tips": [
-      "Ka iyakance shan caffeine zuwa kofi daya ko biyu a rana.",
-      "Ka guji shan caffeine kafin barci."
+      "Limit caffeine to 1–2 cups per day.",
+      "Avoid caffeine before bedtime."
     ]
   },
   {
     "week": 35,
-    "title": "Kula da karfin garkuwar jiki",
-    "tip": "Ka ci abinci mai dauke da antioxidants kamar berries.",
+    "title": "Boost Immune Strength",
+    "tip": "Eat antioxidant-rich foods like berries.",
     "who_tips": [
-      "Ka ci kayan lambu masu launi daban-daban.",
-      "Ka sha ruwa da yawa."
+      "Eat colorful vegetables.",
+      "Drink plenty of water."
     ]
   },
-{
+  {
     "week": 36,
-    "title": "Shiri don haihuwa",
-    "tip": "Ka fara shirya kayayyakin da za ka bukata don haihuwa da kuma samun natsuwa.",
+    "title": "Prepare for Delivery",
+    "tip": "Start organizing your delivery items and mentally prepare.",
     "who_tips": [
-      "Ka shirya kayan jariri da wurin haihuwa.",
-      "Yi shiri na tunani don rage damuwa kafin ranar haihuwa."
+      "Get baby items and delivery space ready.",
+      "Mentally prepare to reduce labor stress."
     ]
   },
   {
     "week": 37,
-    "title": "Kula da motsin jariri",
-    "tip": "Ka lura da motsin jariri don sanin cewa yana lafiya.",
+    "title": "Track Baby Movements",
+    "tip": "Monitor baby’s movement to ensure health.",
     "who_tips": [
-      "Ka lura da motsin jariri akai-akai.",
-      "Ka je wurin likita idan motsin jariri ya ragu sosai."
+      "Track movements regularly.",
+      "Visit the doctor if movements slow down."
     ]
   },
   {
     "week": 38,
-    "title": "Kiyaye lafiya kafin haihuwa",
-    "tip": "Ka kula da lafiyarki sosai, ka ci abinci mai kyau, ka huta sosai.",
+    "title": "Maintain Health Before Delivery",
+    "tip": "Eat well, rest well, and avoid heavy tasks.",
     "who_tips": [
-      "Ka guji yin aiki mai nauyi.",
-      "Ka sha ruwa sosai."
+      "Avoid heavy work.",
+      "Stay hydrated."
     ]
   },
   {
     "week": 39,
-    "title": "Shiri don haihuwa mai sauki",
-    "tip": "Ka yi shiri na ruhaniya da na zahiri don haihuwa mai kyau.",
+    "title": "Prepare for a Smooth Delivery",
+    "tip": "Get ready physically and spiritually for childbirth.",
     "who_tips": [
-      "Ka yi addu’a da tunani mai kyau.",
-      "Ka tuntuɓi likitan ki ko masu jinya domin shawarwari."
+      "Pray and stay positive.",
+      "Consult your doctor or midwife for advice."
     ]
   },
   {
     "week": 40,
-    "title": "Kammala shiri don haihuwa",
-    "tip": "Ka tabbatar an shirya komai domin ranar haihuwa.",
+    "title": "Complete Birth Preparation",
+    "tip": "Ensure everything is ready for delivery day.",
     "who_tips": [
-      "Ka tabbatar kayan jariri sun shirya.",
-      "Ka tuntuɓi likita idan akwai wani canji a jikin ki."
+      "Make sure baby items are packed.",
+      "Call your doctor if you notice any changes."
     ]
   }
 ]
