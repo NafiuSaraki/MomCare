@@ -1,135 +1,142 @@
-  import React, { useState, useRef, useEffect } from 'react';
-import Fuse from 'fuse.js';
-import knowledgeBase from '../data/knowledgeBase.json';
+import React, { useState, useRef, useEffect } from "react";
+import Fuse from "fuse.js";
+import knowledgeBase from "../data/knowledgeBase.json";
 import { FaHome, FaLightbulb, FaRobot, FaUser } from "react-icons/fa";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const Chatbot = () => {
-  const [input, setInput] = useState('');
   const [chat, setChat] = useState([]);
+  const [form, setForm] = useState({ input: "" });
+  const [message, setMessage] = useState("");
+  const [isSuccess, setIsSuccess] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
+
   const chatEndRef = useRef(null);
   const navigate = useNavigate();
 
-  const fuse = new Fuse(knowledgeBase, {
-    keys: ['question', 'keywords'],
-    threshold: 0.5, // More flexible matching
-    includeScore: true,
-  });
+  const handleChange = (e) => setForm({ input: e.target.value });
 
   const scrollToBottom = () => {
-    chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   useEffect(() => {
     scrollToBottom();
-  }, [chat]);
+  }, [chat, isLoading]);
 
-  const handleSend = () => {
-    if (!input.trim()) return;
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (!form.input.trim()) return;
 
-    const results = fuse.search(input.toLowerCase());
-    let answer = "Sorry, I didn’t understand the question. Please try again.";
+    setIsLoading(true); // Start loading
 
-    if (results.length > 0 && results[0].score < 0.6) {
-      answer = results[0].item.answer;
-    }
-
-    const newChat = [
-      ...chat,
-      { type: 'user', message: input },
-      { type: 'bot', message: answer }
-    ];
-
+    const newChat = [...chat, { type: "user", message: form.input }];
     setChat(newChat);
-    setInput('');
-  };
 
-  const handleKeyPress = (e) => {
-    if (e.key === 'Enter') {
-      handleSend();
+    try {
+      const res = await axios.post("https://momcare-lkmi.onrender.com/get_response", form);
+      setChat([
+        ...newChat,
+        { type: "bot", message: res.data.response },
+      ]);
+      setForm({ input: "" });
+      setIsSuccess(true);
+    } catch (err) {
+      setMessage(err.response?.data?.message || "An samu kuskure");
+      setIsSuccess(false);
+    } finally {
+      setIsLoading(false); // Stop loading
     }
   };
+
+  const fuse = new Fuse(knowledgeBase, {
+    keys: ["question", "keywords"],
+    threshold: 0.5,
+    includeScore: true,
+  });
 
   return (
-    <div className="relative min-h-screen bg-green-50 flex flex-col">
-
-      {/* Top Navbar */}
-      <header className="fixed top-0 left-0 w-full h-16 bg-white shadow-md z-20 flex items-center justify-center rounded-b-lg">
-        <h1 className="text-xl font-bold text-green-700">UwaLafiya Chatbot</h1>
+    <div className="min-h-screen flex flex-col bg-gradient-to-br from-green-50 to-white">
+      {/* Header */}
+      <header className="sticky top-0 z-50 w-full bg-white shadow-md py-4 px-6 flex justify-center items-center">
+        <h1 className="text-2xl md:text-3xl font-semibold text-green-700">
+          UwaLafiya Chatbot
+        </h1>
       </header>
 
-      {/* Main Content */}
-      <main className="flex flex-col flex-grow px-4 pt-20 pb-24">
-
-        {/* Chat messages container */}
-        <div className="flex-grow bg-white border rounded-2xl shadow-lg overflow-y-auto p-5 mb-6">
+      {/* Chat Section */}
+      <main className="flex flex-col flex-grow px-4 md:px-10 lg:px-32 py-6 space-y-4">
+        {/* Chat Messages */}
+        <div className="flex-grow overflow-y-auto bg-white rounded-xl shadow-inner border p-4 sm:p-6 space-y-3 max-h-[60vh]">
           {chat.map((msg, i) => (
             <div
               key={i}
-              className={`mb-3 p-3 rounded-lg max-w-[80%] ${
-                msg.type === 'user' ? 'bg-blue-100 ml-auto text-right' : 'bg-green-100'
+              className={`max-w-[85%] w-fit px-4 py-3 rounded-2xl shadow-sm text-sm md:text-base ${
+                msg.type === "user"
+                  ? "ml-auto bg-blue-100 text-right"
+                  : "mr-auto bg-green-100"
               }`}
             >
               {msg.message}
             </div>
           ))}
+
+          {/* Typing Indicator */}
+          {isLoading && (
+            <div className="text-green-600 text-sm animate-pulse">
+              🤖 Bot is typing...
+            </div>
+          )}
+
           <div ref={chatEndRef} />
         </div>
 
-        {/* Input area */}
-        <div className="flex">
+        {/* Input Area */}
+        <form
+          onSubmit={handleSubmit}
+          className="flex flex-col sm:flex-row items-stretch gap-2"
+        >
           <input
             type="text"
-            className="flex-1 border border-gray-300 p-3 rounded-l-lg outline-none"
-            placeholder="Type your question..."
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            onKeyDown={handleKeyPress}
+            value={form.input}
+            onChange={handleChange}
+            placeholder="Rubuta tambayarka..."
+            disabled={isLoading}
+            className="flex-1 px-4 py-3 border rounded-xl outline-none shadow-sm focus:ring-2 focus:ring-green-400 transition disabled:opacity-50"
           />
           <button
-            className="bg-blue-600 text-white px-6 rounded-r-lg hover:bg-blue-700 transition"
-            onClick={handleSend}
+            type="submit"
+            disabled={isLoading}
+            className={`bg-blue-600 text-white px-6 py-3 rounded-xl transition shadow-sm ${
+              isLoading ? "opacity-50 cursor-not-allowed" : "hover:bg-blue-700"
+            }`}
           >
-            Send
+            {isLoading ? "Ana Aiki..." : "Aika"}
           </button>
-        </div>
+        </form>
 
+        {isSuccess === false && (
+          <p className="text-red-600 text-sm">{message}</p>
+        )}
       </main>
 
-      {/* Bottom Nav */}
-      <nav className="fixed bottom-0 left-0 w-full bg-white py-2 flex justify-around border-t shadow-lg z-20">
-        <button
-          onClick={() => navigate("/dashboard")}
-          className="flex flex-col items-center text-green-700 text-sm"
-        >
-          <FaHome size={20} />
-          <span className="text-xs mt-1">Dashboard</span>
-        </button>
-        <button
-          onClick={() => navigate("/tips")}
-          className="flex flex-col items-center text-green-700 text-sm"
-        >
-          <FaLightbulb size={20} />
-          <span className="text-xs mt-1">Tips</span>
-        </button>
-        <button
-          onClick={() => navigate("/chatbot")}
-          className="flex flex-col items-center text-green-700 text-sm"
-        >
-          <FaRobot size={20} />
-          <span className="text-xs mt-1">Chatbot</span>
-        </button>
-        <button
-          onClick={() => navigate("/profile")}
-          className="flex flex-col items-center text-green-700 text-sm"
-        >
-          <FaUser size={20} />
-          <span className="text-xs mt-1">Profile</span>
-        </button>
+      {/* Bottom Navigation - Hidden on md and above */}
+      <nav className="fixed bottom-0 w-full bg-white shadow-md border-t py-2 flex justify-around z-50 md:hidden">
+        <NavButton icon={<FaHome size={20} />} label="Dashboard" onClick={() => navigate("/dashboard")} />
+        <NavButton icon={<FaLightbulb size={20} />} label="Shawara" onClick={() => navigate("/tips")} />
+        <NavButton icon={<FaRobot size={20} />} label="Chatbot" onClick={() => navigate("/chatbot")} />
+        <NavButton icon={<FaUser size={20} />} label="Bayanan Ki" onClick={() => navigate("/profile")} />
       </nav>
-
     </div>
   );
 };
+
+const NavButton = ({ icon, label, onClick }) => (
+  <button onClick={onClick} className="flex flex-col items-center text-green-700 text-sm">
+    {icon}
+    <span className="text-xs mt-1">{label}</span>
+  </button>
+);
 
 export default Chatbot;
